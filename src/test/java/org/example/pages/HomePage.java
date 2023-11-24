@@ -16,7 +16,11 @@ public class HomePage extends BaseTest {
     private String guideButton = "(//yt-icon-button[@id='guide-button'])[1]";
 
     public Locator getMainLogo() { return page.locator(mainLogo); }
-    public Locator getSearchInput() { return  page.locator(searchInput); }
+    public Locator getSearchInput() {
+        page.locator(searchInput).waitFor();
+        return  page.locator(searchInput); }
     public Locator getSearchButton() { return  page.locator(searchButton); }
     public Locator getGuideButton() { return  page.locator(guideButton); }
+
+    public void sleep(Double sec){ page.waitForTimeout(sec); }
 }

@@ -20,5 +20,9 @@ public class SearchVideoTest extends BaseTest {
         Pages.getSearchPage().isSearchResultTextFiledVisible();
         Pages.getSearchPage().isSearchYearsResultTextFiledVisible();
         Pages.getSearchPage().clickOnFoundVideo();
+
+        PlaywrightAssertions.assertThat(Pages.getSearchPage().getSubscribeButton()).isVisible();
+        PlaywrightAssertions.assertThat(Pages.getSearchPage().getLikeButton()).isVisible();
+        PlaywrightAssertions.assertThat(Pages.getSearchPage().getDislikeButton()).isVisible();
     }
 }

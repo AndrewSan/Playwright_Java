@@ -1,4 +1,8 @@
 org\example\factory\BrowserFactory.class
+org\example\tests\SearchVideoTest.class
+org\example\pages\Pages.class
+org\example\pages\HomePage.class
+org\example\pages\SearchPage.class
 org\example\base\Constans.class
 org\example\base\BaseTest.class
-org\example\tests\SearchVideoTest.class
+org\example\tests\HomepageTest.class

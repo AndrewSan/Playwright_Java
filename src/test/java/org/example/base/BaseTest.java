@@ -52,7 +52,7 @@ public class BaseTest {
         else
             System.out.println(Constans.successMessage);
 
-        page.context().browser().close();
+//        page.context().browser().close();
     }
 
     @Attachment(type = "image/png")

@@ -1,4 +1,53 @@
 -------------------------------------------------------------------------------
 Test set: org.example.tests.SearchVideoTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 15.742 sec
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 42.21 sec <<< FAILURE!
+searchVideo(org.example.tests.SearchVideoTest)  Time elapsed: 33.134 sec  <<< FAILURE!
+com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 30000ms exceeded.
+=========================== logs ===========================
+waiting for locator("xpath=(//like-button-view-model[@class='YtLikeButtonViewModelHost'])[1]") to be visible
+============================================================
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+=========================== logs ===========================
+waiting for locator("xpath=(//like-button-view-model[@class='YtLikeButtonViewModelHost'])[1]") to be visible
+============================================================
+    at ProgressController.run (C:\Users\user\AppData\Local\Temp\playwright-java-7719292390400792819\package\lib\server\progress.js:88:26)
+    at Frame.waitForSelector (C:\Users\user\AppData\Local\Temp\playwright-java-7719292390400792819\package\lib\server\frames.js:618:23)
+    at FrameDispatcher.waitForSelector (C:\Users\user\AppData\Local\Temp\playwright-java-7719292390400792819\package\lib\server\dispatchers\frameDispatcher.js:103:103)
+    at DispatcherConnection.dispatch (C:\Users\user\AppData\Local\Temp\playwright-java-7719292390400792819\package\lib\server\dispatchers\dispatcher.js:313:46)
+}
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:111)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:126)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:102)
+	at com.microsoft.playwright.impl.FrameImpl.waitForSelectorImpl(FrameImpl.java:1064)
+	at com.microsoft.playwright.impl.LocatorImpl.lambda$waitForImpl$7(LocatorImpl.java:594)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:87)
+	at com.microsoft.playwright.impl.LocatorImpl.waitForImpl(LocatorImpl.java:594)
+	at com.microsoft.playwright.impl.LocatorImpl.waitFor(LocatorImpl.java:590)
+	at com.microsoft.playwright.Locator.waitFor(Locator.java:5062)
+	at org.example.pages.SearchPage.getLikeButton(SearchPage.java:37)
+	at org.example.tests.SearchVideoTest.searchVideo(SearchVideoTest.java:25)
+Caused by: com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 30000ms exceeded.
+=========================== logs ===========================
+waiting for locator("xpath=(//like-button-view-model[@class='YtLikeButtonViewModelHost'])[1]") to be visible
+============================================================
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+=========================== logs ===========================
+waiting for locator("xpath=(//like-button-view-model[@class='YtLikeButtonViewModelHost'])[1]") to be visible
+============================================================
+    at ProgressController.run (C:\Users\user\AppData\Local\Temp\playwright-java-7719292390400792819\package\lib\server\progress.js:88:26)
+    at Frame.waitForSelector (C:\Users\user\AppData\Local\Temp\playwright-java-7719292390400792819\package\lib\server\frames.js:618:23)
+    at FrameDispatcher.waitForSelector (C:\Users\user\AppData\Local\Temp\playwright-java-7719292390400792819\package\lib\server\dispatchers\frameDispatcher.js:103:103)
+    at DispatcherConnection.dispatch (C:\Users\user\AppData\Local\Temp\playwright-java-7719292390400792819\package\lib\server\dispatchers\dispatcher.js:313:46)
+}
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:224)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:206)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:109)
+	... 44 more
+
