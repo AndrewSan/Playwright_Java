@@ -1,0 +1,21 @@
+
+9
+	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
+e
+5src/test/java/org/example/factory/BrowserFactory.java,e\8\e80dce798b031ad48074bf4292509d699adbf1e6
+]
+-src/test/java/org/example/pages/HomePage.java,8\b\8beb9fb89fe9c1abb7b3e52a3fade42999e350e4
+7
+pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
+a
+1src/test/java/org/example/tests/HomepageTest.java,e\4\e4bf56d3fbdd225df2338386d2c70b8ec9bfcad0
+\
+,src/test/java/org/example/base/BaseTest.java,b\8\b8dc7fa141190445c0c17aa9ca69e91fe68650fd
+\
+,src/test/java/org/example/base/Constans.java,d\c\dca46afaee20d74524119a7399fcae47a70fd6dd
+Z
+*src/test/java/org/example/pages/Pages.java,4\2\42f610e80a7ae8e90a68f6bb36db35b279668608
+_
+/src/test/java/org/example/pages/SearchPage.java,6\8\684472e04d775ff100450944da1521b405d8dc10
+d
+4src/test/java/org/example/tests/SearchVideoTest.java,9\d\9dd3837fc748ff8f64198ffe788d5fc647795af3
