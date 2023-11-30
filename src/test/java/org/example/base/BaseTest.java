@@ -33,7 +33,6 @@ public class BaseTest {
         page = browserFactory.initializeBrowser(browserName, headless);
         page.navigate(properties.getProperty("BASE_URL").trim());
 
-//        homepage = new HomePage(page);
     }
 
     @AfterMethod

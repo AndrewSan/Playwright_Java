@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [org.example.tests.SearchVideoTest]" verbose="0">
+<suite name="Failed suite [org.example.tests.VerifyUnaccessTest]" verbose="0">
   <test thread-count="5" name="Command line test(failed)" verbose="0">
     <classes>
-      <class name="org.example.tests.SearchVideoTest">
+      <class name="org.example.tests.VerifyUnaccessTest">
         <methods>
           <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="searchVideo"/>
+          <include name="verifyUnaccess"/>
         </methods>
-      </class> <!-- org.example.tests.SearchVideoTest -->
+      </class> <!-- org.example.tests.VerifyUnaccessTest -->
     </classes>
   </test> <!-- Command line test(failed) -->
-</suite> <!-- Failed suite [org.example.tests.SearchVideoTest] -->
+</suite> <!-- Failed suite [org.example.tests.VerifyUnaccessTest] -->

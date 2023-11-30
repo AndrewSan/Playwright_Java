@@ -6,6 +6,20 @@ public class Pages extends BaseTest {
 
     private static HomePage homePage;
     private static SearchPage searchPage;
+    private static UserPage userPage;
+    private static ShortsPage shortsPage;
+
+    public static ShortsPage getShortsPage(){
+        if(shortsPage == null)
+            shortsPage = new ShortsPage(page);
+        return shortsPage;
+    }
+
+    public static UserPage getUserPage(){
+        if(userPage == null)
+            userPage = new UserPage(page);
+        return userPage;
+    }
 
     public static HomePage getHomePage(){
         if(homePage == null)
