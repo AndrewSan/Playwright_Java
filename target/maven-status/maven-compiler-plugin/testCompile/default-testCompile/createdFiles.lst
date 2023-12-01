@@ -2,6 +2,7 @@ org\example\tests\SearchVideoTest.class
 org\example\pages\HomePage.class
 org\example\tests\VerifyUnaccessTest.class
 org\example\pages\ShortsPage.class
+org\example\base\PageTools.class
 org\example\pages\SearchPage.class
 org\example\tests\HomepageTest.class
 org\example\tests\ShortsTest.class

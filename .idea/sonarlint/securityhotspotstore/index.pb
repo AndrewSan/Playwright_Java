@@ -663,3 +663,11 @@ r
 Ballure-results/1aa3933f-04c3-4e40-be4a-b3b2e4bd90c7-container.json,1\2\125ce7cf1e70ccee09021243f2badb900b51b430
 Å
 Q.idea/sonarlint/securityhotspotstore/d/c/dca46afaee20d74524119a7399fcae47a70fd6dd,8\b\8b822f5c01952c57b4ed5d5d4ead38d2389f0dfc
+g
+7src/test/java/org/example/tests/VerifyUnaccessTest.java,d\9\d95a5933aed4463fbc1df28f71ffde61831327e8
+_
+/src/test/java/org/example/pages/ShortsPage.java,f\e\fe90c4d41dfcfaa6aee53d24922840994c91d7d8
+]
+-src/test/java/org/example/pages/UserPage.java,f\a\fa87a35af9a474074a89397957b9b0397562b886
+_
+/src/test/java/org/example/tests/ShortsTest.java,b\4\b464718f7b1e7e6fd3f218d44e1a67f1ae6fc3f7

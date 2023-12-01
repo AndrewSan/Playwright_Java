@@ -663,3 +663,11 @@ r
 Ballure-results/ffa2ce1b-f802-45a3-960e-1a368ac7a71f-container.json,3\e\3ef38a5410fd072a36215f0206207cde9782bf18
 7
 LICENSE,0\3\0398ccd0f49298b10a3d76a47800d2ebecd49859
+_
+/src/test/java/org/example/pages/ShortsPage.java,f\e\fe90c4d41dfcfaa6aee53d24922840994c91d7d8
+]
+-src/test/java/org/example/pages/UserPage.java,f\a\fa87a35af9a474074a89397957b9b0397562b886
+g
+7src/test/java/org/example/tests/VerifyUnaccessTest.java,d\9\d95a5933aed4463fbc1df28f71ffde61831327e8
+_
+/src/test/java/org/example/tests/ShortsTest.java,b\4\b464718f7b1e7e6fd3f218d44e1a67f1ae6fc3f7
