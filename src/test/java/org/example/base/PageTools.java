@@ -1,6 +1,6 @@
 package org.example.base;
 
-import com.microsoft.playwright.Page;
+import com.microsoft.playwright.*;
 
 import java.nio.file.Paths;
 import java.util.Random;
@@ -20,5 +20,9 @@ public class PageTools extends BaseTest{
     public static void takeFullScreenshot(){
         Random random = new Random();
         page.screenshot(new Page.ScreenshotOptions().setPath(Paths.get("./snaps/FullImg" + random.nextInt() +".png")).setFullPage(true));
+    }
+
+    public static void recordVideo(){
+
     }
 }

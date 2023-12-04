@@ -1,9 +1,9 @@
 package org.example.base;
 
-import com.microsoft.playwright.Browser;
-import com.microsoft.playwright.Page;
+import com.microsoft.playwright.*;
 import io.qameta.allure.Allure;
 import io.qameta.allure.Attachment;
+import org.aspectj.lang.annotation.After;
 import org.example.factory.BrowserFactory;
 import org.example.pages.HomePage;
 import org.example.pages.Pages;
@@ -21,7 +21,8 @@ import java.util.Properties;
 
 public class BaseTest {
     private final BrowserFactory browserFactory = new BrowserFactory();
-    protected Properties properties = browserFactory.initializeConfigProperties(new Browser.NewContextOptions().setViewportSize(1920, 1080));
+    protected Properties properties = browserFactory.initializeConfigProperties(new Browser.NewContextOptions()
+            .setViewportSize(1920, 1080).setRecordVideoDir(Paths.get("video/")));
     protected static Page page;
     private String browserName;
 
@@ -30,7 +31,16 @@ public class BaseTest {
     public void setUp(@Optional("chrome") String browserName, @Optional("false") String headless) throws IllegalArgumentException {
         this.browserName = browserName;
 
-        page = browserFactory.initializeBrowser(browserName, headless);
+        Playwright playwright = Playwright.create();
+        BrowserType browserType = playwright.chromium();
+        Browser browser = browserType.launch(new BrowserType.LaunchOptions().setHeadless(false));
+        BrowserContext context;
+        if(Boolean.parseBoolean(System.getProperty("recordVideo", "false")))
+            context = browser.newContext(new Browser.NewContextOptions().setRecordVideoDir(Paths.get("video/")).setViewportSize(1920,1080));
+        else
+            context = browser.newContext( new Browser.NewContextOptions().setViewportSize(1920, 1080));
+
+        page = context.newPage();
         page.navigate(properties.getProperty("BASE_URL").trim());
 
     }
@@ -50,8 +60,11 @@ public class BaseTest {
         }
         else
             System.out.println(Constans.successMessage);
+    }
 
-//        page.context().browser().close();
+    @After("")
+    public void closeAll(){
+        page.context().browser().close();
     }
 
     @Attachment(type = "image/png")

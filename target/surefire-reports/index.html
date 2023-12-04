@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,8 +38,8 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" panel-name="suite-org_example_tests_VerifyUnaccessTest" class="navigator-link">
-              <span class="suite-name border-passed">org.example.tests.VerifyUnaccessTest</span>
+            <a href="#" panel-name="suite-Command_line_suite" class="navigator-link">
+              <span class="suite-name border-failed">Command line suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,37 +49,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" panel-name="test-xml-org_example_tests_VerifyUnaccessTest" class="navigator-link ">
+                  <a href="#" panel-name="test-xml-Command_line_suite" class="navigator-link ">
                     <span>[unset file name]</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="testlist-org_example_tests_VerifyUnaccessTest" class="navigator-link ">
+                  <a href="#" panel-name="testlist-Command_line_suite" class="navigator-link ">
                     <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="group-org_example_tests_VerifyUnaccessTest" class="navigator-link ">
+                  <a href="#" panel-name="group-Command_line_suite" class="navigator-link ">
                     <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="times-org_example_tests_VerifyUnaccessTest" class="navigator-link ">
+                  <a href="#" panel-name="times-Command_line_suite" class="navigator-link ">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="reporter-org_example_tests_VerifyUnaccessTest" class="navigator-link ">
+                  <a href="#" panel-name="reporter-Command_line_suite" class="navigator-link ">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="ignored-methods-org_example_tests_VerifyUnaccessTest" class="navigator-link ">
+                  <a href="#" panel-name="ignored-methods-Command_line_suite" class="navigator-link ">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="chronological-org_example_tests_VerifyUnaccessTest" class="navigator-link ">
+                  <a href="#" panel-name="chronological-Command_line_suite" class="navigator-link ">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -92,21 +92,45 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">4 methods, 1 failed,   3 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Command_line_suite" class="hide-methods failed suite-Command_line_suite"> (hide)</a> <!-- hide-methods failed suite-Command_line_suite -->
+                      <a href="#" panel-name="suite-Command_line_suite" class="show-methods failed suite-Command_line_suite"> (show)</a> <!-- show-methods failed suite-Command_line_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Command_line_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="org.example.tests.SearchVideoTest" class="method navigator-link" hash-for-method="searchVideo">searchVideo</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Command_line_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
                     <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-org_example_tests_VerifyUnaccessTest" class="hide-methods passed suite-org_example_tests_VerifyUnaccessTest"> (hide)</a> <!-- hide-methods passed suite-org_example_tests_VerifyUnaccessTest -->
-                      <a href="#" panel-name="suite-org_example_tests_VerifyUnaccessTest" class="show-methods passed suite-org_example_tests_VerifyUnaccessTest"> (show)</a> <!-- show-methods passed suite-org_example_tests_VerifyUnaccessTest -->
+                      <a href="#" panel-name="suite-Command_line_suite" class="hide-methods passed suite-Command_line_suite"> (hide)</a> <!-- hide-methods passed suite-Command_line_suite -->
+                      <a href="#" panel-name="suite-Command_line_suite" class="show-methods passed suite-Command_line_suite"> (show)</a> <!-- show-methods passed suite-Command_line_suite -->
                     </span>
-                    <div class="method-list-content passed suite-org_example_tests_VerifyUnaccessTest">
+                    <div class="method-list-content passed suite-Command_line_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-org_example_tests_VerifyUnaccessTest" title="org.example.tests.VerifyUnaccessTest" class="method navigator-link" hash-for-method="verifyUnaccess">verifyUnaccess</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Command_line_suite" title="org.example.tests.ShortsTest" class="method navigator-link" hash-for-method="shortsTest">shortsTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-org_example_tests_VerifyUnaccessTest -->
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="org.example.tests.HomepageTest" class="method navigator-link" hash-for-method="verifyHeadingIsVisible">verifyHeadingIsVisible</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="org.example.tests.VerifyUnaccessTest" class="method navigator-link" hash-for-method="verifyUnaccess">verifyUnaccess</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Command_line_suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -117,8 +141,88 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-org_example_tests_VerifyUnaccessTest" class="panel org_example_tests_VerifyUnaccessTest">
-          <div class="suite-org_example_tests_VerifyUnaccessTest-class-passed">
+        <div panel-name="suite-Command_line_suite" class="panel Command_line_suite">
+          <div class="suite-Command_line_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">org.example.tests.SearchVideoTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchVideo">
+                  </a> <!-- searchVideo -->
+                  <span class="method-name">searchVideo</span>
+                  <div class="stack-trace">com.microsoft.playwright.TimeoutError: Error {
+  message=&apos;Timeout 30000ms exceeded.
+=========================== logs ===========================
+waiting for locator(&quot;xpath=(//like-button-view-model[@class=&apos;YtLikeButtonViewModelHost&apos;])[1]&quot;) to be visible
+============================================================
+  name=&apos;TimeoutError
+  stack=&apos;TimeoutError: Timeout 30000ms exceeded.
+=========================== logs ===========================
+waiting for locator(&quot;xpath=(//like-button-view-model[@class=&apos;YtLikeButtonViewModelHost&apos;])[1]&quot;) to be visible
+============================================================
+    at ProgressController.run (C:\Users\user\AppData\Local\Temp\playwright-java-307849707808395397\package\lib\server\progress.js:88:26)
+    at Frame.waitForSelector (C:\Users\user\AppData\Local\Temp\playwright-java-307849707808395397\package\lib\server\frames.js:618:23)
+    at FrameDispatcher.waitForSelector (C:\Users\user\AppData\Local\Temp\playwright-java-307849707808395397\package\lib\server\dispatchers\frameDispatcher.js:103:103)
+    at DispatcherConnection.dispatch (C:\Users\user\AppData\Local\Temp\playwright-java-307849707808395397\package\lib\server\dispatchers\dispatcher.js:313:46)
+}
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:111)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:126)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:102)
+	at com.microsoft.playwright.impl.FrameImpl.waitForSelectorImpl(FrameImpl.java:1064)
+	at com.microsoft.playwright.impl.LocatorImpl.lambda$waitForImpl$7(LocatorImpl.java:594)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:87)
+	at com.microsoft.playwright.impl.LocatorImpl.waitForImpl(LocatorImpl.java:594)
+	at com.microsoft.playwright.impl.LocatorImpl.waitFor(LocatorImpl.java:590)
+	at com.microsoft.playwright.Locator.waitFor(Locator.java:5062)
+	at org.example.pages.SearchPage.getLikeButton(SearchPage.java:37)
+	at org.example.tests.SearchVideoTest.searchVideo(SearchVideoTest.java:25)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+Caused by: com.microsoft.playwright.TimeoutError: Error {
+  message=&apos;Timeout 30000ms exceeded.
+=========================== logs ===========================
+waiting for locator(&quot;xpath=(//like-button-view-model[@class=&apos;YtLikeButtonViewModelHost&apos;])[1]&quot;) to be visible
+============================================================
+  name=&apos;TimeoutError
+  stack=&apos;TimeoutError: Timeout 30000ms exceeded.
+=========================== logs ===========================
+waiting for locator(&quot;xpath=(//like-button-view-model[@class=&apos;YtLikeButtonViewModelHost&apos;])[1]&quot;) to be visible
+============================================================
+    at ProgressController.run (C:\Users\user\AppData\Local\Temp\playwright-java-307849707808395397\package\lib\server\progress.js:88:26)
+    at Frame.waitForSelector (C:\Users\user\AppData\Local\Temp\playwright-java-307849707808395397\package\lib\server\frames.js:618:23)
+    at FrameDispatcher.waitForSelector (C:\Users\user\AppData\Local\Temp\playwright-java-307849707808395397\package\lib\server\dispatchers\frameDispatcher.js:103:103)
+    at DispatcherConnection.dispatch (C:\Users\user\AppData\Local\Temp\playwright-java-307849707808395397\package\lib\server\dispatchers\dispatcher.js:313:46)
+}
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:224)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:206)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:109)
+	... 45 more
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-failed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">org.example.tests.HomepageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyHeadingIsVisible">
+                  </a> <!-- verifyHeadingIsVisible -->
+                  <span class="method-name">verifyHeadingIsVisible</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+          <div class="suite-Command_line_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
               <span class="class-name">org.example.tests.VerifyUnaccessTest</span>
@@ -132,105 +236,183 @@
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-org_example_tests_VerifyUnaccessTest-class-passed -->
-        </div> <!-- panel org_example_tests_VerifyUnaccessTest -->
-        <div panel-name="test-xml-org_example_tests_VerifyUnaccessTest" class="panel">
+          </div> <!-- suite-Command_line_suite-class-passed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">org.example.tests.ShortsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="shortsTest">
+                  </a> <!-- shortsTest -->
+                  <span class="method-name">shortsTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+        </div> <!-- panel Command_line_suite -->
+        <div panel-name="test-xml-Command_line_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;org.example.tests.VerifyUnaccessTest&quot; verbose=&quot;0&quot;&gt;
+&lt;suite name=&quot;Command line suite&quot; verbose=&quot;0&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Command line test&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
+      &lt;class name=&quot;org.example.base.BaseTest&quot;/&gt;
+      &lt;class name=&quot;org.example.tests.HomepageTest&quot;/&gt;
+      &lt;class name=&quot;org.example.tests.SearchVideoTest&quot;/&gt;
+      &lt;class name=&quot;org.example.tests.ShortsTest&quot;/&gt;
       &lt;class name=&quot;org.example.tests.VerifyUnaccessTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Command line test --&gt;
-&lt;/suite&gt; &lt;!-- org.example.tests.VerifyUnaccessTest --&gt;
+&lt;/suite&gt; &lt;!-- Command line suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-org_example_tests_VerifyUnaccessTest" class="panel">
+        <div panel-name="testlist-Command_line_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for org.example.tests.VerifyUnaccessTest</span>
+            <span class="header-content">Tests for Command line suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Command line test (1 class)</span>
+                <span class="test-name">Command line test (5 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-org_example_tests_VerifyUnaccessTest" class="panel">
+        <div panel-name="group-Command_line_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for org.example.tests.VerifyUnaccessTest</span>
+            <span class="header-content">Groups for Command line suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-org_example_tests_VerifyUnaccessTest" class="panel">
+        <div panel-name="times-Command_line_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for org.example.tests.VerifyUnaccessTest</span>
+            <span class="header-content">Times for Command line suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_org_example_tests_VerifyUnaccessTest');
-function tableData_org_example_tests_VerifyUnaccessTest() {
+suiteTableInitFunctions.push('tableData_Command_line_suite');
+function tableData_Command_line_suite() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyUnaccess')
-data.setCell(0, 2, 'org.example.tests.VerifyUnaccessTest')
-data.setCell(0, 3, 1476);
-window.suiteTableData['org_example_tests_VerifyUnaccessTest']= { tableData: data, tableDiv: 'times-div-org_example_tests_VerifyUnaccessTest'}
+data.setCell(0, 1, 'searchVideo')
+data.setCell(0, 2, 'org.example.tests.SearchVideoTest')
+data.setCell(0, 3, 35199);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'verifyUnaccess')
+data.setCell(1, 2, 'org.example.tests.VerifyUnaccessTest')
+data.setCell(1, 3, 4617);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'shortsTest')
+data.setCell(2, 2, 'org.example.tests.ShortsTest')
+data.setCell(2, 3, 3452);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'verifyHeadingIsVisible')
+data.setCell(3, 2, 'org.example.tests.HomepageTest')
+data.setCell(3, 3, 201);
+window.suiteTableData['Command_line_suite']= { tableData: data, tableDiv: 'times-div-Command_line_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 seconds</span>
-              <div id="times-div-org_example_tests_VerifyUnaccessTest">
-              </div> <!-- times-div-org_example_tests_VerifyUnaccessTest -->
+              <span class="suite-total-time">Total running time: 43 seconds</span>
+              <div id="times-div-Command_line_suite">
+              </div> <!-- times-div-Command_line_suite -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-org_example_tests_VerifyUnaccessTest" class="panel">
+        <div panel-name="reporter-Command_line_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for org.example.tests.VerifyUnaccessTest</span>
+            <span class="header-content">Reporter output for Command line suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-org_example_tests_VerifyUnaccessTest" class="panel">
+        <div panel-name="ignored-methods-Command_line_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-org_example_tests_VerifyUnaccessTest" class="panel">
+        <div panel-name="chronological-Command_line_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">org.example.tests.VerifyUnaccessTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">org.example.tests.HomepageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(chrome, false)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <span class="method-name">verifyHeadingIsVisible</span>
+                <span class="method-start">8549 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=verifyHeadingIsVisible status=SUCCESS method=HomepageTest.verifyHeadingIsVisible()[...)</span>
+                <span class="method-start">8763 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">org.example.tests.SearchVideoTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome, false)</span>
+                <span class="method-start">8770 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">searchVideo</span>
+                <span class="method-start">12349 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=searchVideo status=FAILURE method=SearchVideoTest.searchVideo()[pri:0, instance:org...)</span>
+                <span class="method-start">47554 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">org.example.tests.ShortsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome, false)</span>
+                <span class="method-start">48077 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">shortsTest</span>
+                <span class="method-start">51167 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=shortsTest status=SUCCESS method=ShortsTest.shortsTest()[pri:0, instance:org.exampl...)</span>
+                <span class="method-start">54622 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">org.example.tests.VerifyUnaccessTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome, false)</span>
+                <span class="method-start">54633 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
                 <span class="method-name">verifyUnaccess</span>
-                <span class="method-start">9586 ms</span>
+                <span class="method-start">58317 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=verifyUnaccess status=SUCCESS method=VerifyUnaccessTest.verifyUnaccess()[pri:0, ins...)</span>
-                <span class="method-start">11080 ms</span>
+                <span class="method-start">62935 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -8,11 +8,62 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">org.example.tests.VerifyUnaccessTest</th></tr>
-<tr><td><a href="#t0">Command line test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">11 118</td><td></td><td></td></tr>
+<tr><th colspan="8">Command line suite</th></tr>
+<tr><td><a href="#t0">Command line test</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">62 970</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">org.example.tests.VerifyUnaccessTest</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Command line test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">org.example.tests.VerifyUnaccessTest</td><td><a href="#m0">verifyUnaccess</a></td><td rowspan="1">1701467780934</td><td rowspan="1">1476</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Command line suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Command line test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">org.example.tests.SearchVideoTest</td><td><a href="#m0">searchVideo</a></td><td rowspan="1">1701730502762</td><td rowspan="1">35199</td></tr><tr><th colspan="4">Command line test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">org.example.tests.HomepageTest</td><td><a href="#m1">verifyHeadingIsVisible</a></td><td rowspan="1">1701730498962</td><td rowspan="1">201</td></tr><tr class="passedodd"><td rowspan="1">org.example.tests.ShortsTest</td><td><a href="#m2">shortsTest</a></td><td rowspan="1">1701730541580</td><td rowspan="1">3452</td></tr><tr class="passedeven"><td rowspan="1">org.example.tests.VerifyUnaccessTest</td><td><a href="#m3">verifyUnaccess</a></td><td rowspan="1">1701730548730</td><td rowspan="1">4617</td></tr></tbody>
 </table>
-<h2>Command line test</h2><h3 id="m0">org.example.tests.VerifyUnaccessTest#verifyUnaccess</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Command line test</h2><h3 id="m0">org.example.tests.SearchVideoTest#searchVideo</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">com.microsoft.playwright.TimeoutError: Error {
+  message=&apos;Timeout 30000ms exceeded.
+=========================== logs ===========================
+waiting for locator(&quot;xpath=(//like-button-view-model[@class=&apos;YtLikeButtonViewModelHost&apos;])[1]&quot;) to be visible
+============================================================
+  name=&apos;TimeoutError
+  stack=&apos;TimeoutError: Timeout 30000ms exceeded.
+=========================== logs ===========================
+waiting for locator(&quot;xpath=(//like-button-view-model[@class=&apos;YtLikeButtonViewModelHost&apos;])[1]&quot;) to be visible
+============================================================
+    at ProgressController.run (C:\Users\user\AppData\Local\Temp\playwright-java-307849707808395397\package\lib\server\progress.js:88:26)
+    at Frame.waitForSelector (C:\Users\user\AppData\Local\Temp\playwright-java-307849707808395397\package\lib\server\frames.js:618:23)
+    at FrameDispatcher.waitForSelector (C:\Users\user\AppData\Local\Temp\playwright-java-307849707808395397\package\lib\server\dispatchers\frameDispatcher.js:103:103)
+    at DispatcherConnection.dispatch (C:\Users\user\AppData\Local\Temp\playwright-java-307849707808395397\package\lib\server\dispatchers\dispatcher.js:313:46)
+}
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:111)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:126)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:102)
+	at com.microsoft.playwright.impl.FrameImpl.waitForSelectorImpl(FrameImpl.java:1064)
+	at com.microsoft.playwright.impl.LocatorImpl.lambda$waitForImpl$7(LocatorImpl.java:594)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:87)
+	at com.microsoft.playwright.impl.LocatorImpl.waitForImpl(LocatorImpl.java:594)
+	at com.microsoft.playwright.impl.LocatorImpl.waitFor(LocatorImpl.java:590)
+	at com.microsoft.playwright.Locator.waitFor(Locator.java:5062)
+	at org.example.pages.SearchPage.getLikeButton(SearchPage.java:37)
+	at org.example.tests.SearchVideoTest.searchVideo(SearchVideoTest.java:25)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+Caused by: com.microsoft.playwright.TimeoutError: Error {
+  message=&apos;Timeout 30000ms exceeded.
+=========================== logs ===========================
+waiting for locator(&quot;xpath=(//like-button-view-model[@class=&apos;YtLikeButtonViewModelHost&apos;])[1]&quot;) to be visible
+============================================================
+  name=&apos;TimeoutError
+  stack=&apos;TimeoutError: Timeout 30000ms exceeded.
+=========================== logs ===========================
+waiting for locator(&quot;xpath=(//like-button-view-model[@class=&apos;YtLikeButtonViewModelHost&apos;])[1]&quot;) to be visible
+============================================================
+    at ProgressController.run (C:\Users\user\AppData\Local\Temp\playwright-java-307849707808395397\package\lib\server\progress.js:88:26)
+    at Frame.waitForSelector (C:\Users\user\AppData\Local\Temp\playwright-java-307849707808395397\package\lib\server\frames.js:618:23)
+    at FrameDispatcher.waitForSelector (C:\Users\user\AppData\Local\Temp\playwright-java-307849707808395397\package\lib\server\dispatchers\frameDispatcher.js:103:103)
+    at DispatcherConnection.dispatch (C:\Users\user\AppData\Local\Temp\playwright-java-307849707808395397\package\lib\server\dispatchers\dispatcher.js:313:46)
+}
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:224)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:206)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:109)
+	... 45 more
+... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">org.example.tests.HomepageTest#verifyHeadingIsVisible</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">org.example.tests.ShortsTest#shortsTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">org.example.tests.VerifyUnaccessTest#verifyUnaccess</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

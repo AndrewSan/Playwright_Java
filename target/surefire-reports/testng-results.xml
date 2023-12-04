@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-12-01T23:56:11 EET" name="org.example.tests.VerifyUnaccessTest" finished-at="2023-12-01T23:56:22 EET" duration-ms="11118">
+  <suite started-at="2023-12-05T00:54:50 EET" name="Command line suite" finished-at="2023-12-05T00:55:53 EET" duration-ms="62970">
     <groups>
     </groups>
-    <test started-at="2023-12-01T23:56:11 EET" name="Command line test" finished-at="2023-12-01T23:56:22 EET" duration-ms="11118">
+    <test started-at="2023-12-05T00:54:50 EET" name="Command line test" finished-at="2023-12-05T00:55:53 EET" duration-ms="62970">
       <class name="org.example.tests.VerifyUnaccessTest">
-        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:org.example.tests.VerifyUnaccessTest@ba54932]" started-at="2023-12-01T23:56:11 EET" name="setUp" finished-at="2023-12-01T23:56:20 EET" duration-ms="9525" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:org.example.tests.VerifyUnaccessTest@26275bef]" started-at="2023-12-05T00:55:45 EET" name="setUp" finished-at="2023-12-05T00:55:48 EET" duration-ms="3677" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -23,15 +23,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyUnaccess()[pri:0, instance:org.example.tests.VerifyUnaccessTest@ba54932]" started-at="2023-12-01T23:56:20 EET" name="verifyUnaccess" finished-at="2023-12-01T23:56:22 EET" duration-ms="1476" status="PASS">
+        <test-method signature="verifyUnaccess()[pri:0, instance:org.example.tests.VerifyUnaccessTest@26275bef]" started-at="2023-12-05T00:55:48 EET" name="verifyUnaccess" finished-at="2023-12-05T00:55:53 EET" duration-ms="4617" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyUnaccess -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:org.example.tests.VerifyUnaccessTest@ba54932]" started-at="2023-12-01T23:56:22 EET" name="tearDown" finished-at="2023-12-01T23:56:22 EET" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:org.example.tests.VerifyUnaccessTest@26275bef]" started-at="2023-12-05T00:55:53 EET" name="tearDown" finished-at="2023-12-05T00:55:53 EET" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyUnaccess status=SUCCESS method=VerifyUnaccessTest.verifyUnaccess()[pri:0, instance:org.example.tests.VerifyUnaccessTest@ba54932] output={null}]]]>
+                <![CDATA[[TestResult name=verifyUnaccess status=SUCCESS method=VerifyUnaccessTest.verifyUnaccess()[pri:0, instance:org.example.tests.VerifyUnaccessTest@26275bef] output={null}]]]>
               </value>
             </param>
           </params>
@@ -39,6 +39,208 @@
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- org.example.tests.VerifyUnaccessTest -->
+      <class name="org.example.tests.SearchVideoTest">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:org.example.tests.SearchVideoTest@140c9f39]" started-at="2023-12-05T00:54:59 EET" name="setUp" finished-at="2023-12-05T00:55:02 EET" duration-ms="3577" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="searchVideo()[pri:0, instance:org.example.tests.SearchVideoTest@140c9f39]" started-at="2023-12-05T00:55:02 EET" name="searchVideo" finished-at="2023-12-05T00:55:37 EET" duration-ms="35199" status="FAIL">
+          <exception class="com.microsoft.playwright.TimeoutError">
+            <message>
+              <![CDATA[Error {
+  message='Timeout 30000ms exceeded.
+=========================== logs ===========================
+waiting for locator("xpath=(//like-button-view-model[@class='YtLikeButtonViewModelHost'])[1]") to be visible
+============================================================
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+=========================== logs ===========================
+waiting for locator("xpath=(//like-button-view-model[@class='YtLikeButtonViewModelHost'])[1]") to be visible
+============================================================
+    at ProgressController.run (C:\Users\user\AppData\Local\Temp\playwright-java-307849707808395397\package\lib\server\progress.js:88:26)
+    at Frame.waitForSelector (C:\Users\user\AppData\Local\Temp\playwright-java-307849707808395397\package\lib\server\frames.js:618:23)
+    at FrameDispatcher.waitForSelector (C:\Users\user\AppData\Local\Temp\playwright-java-307849707808395397\package\lib\server\dispatchers\frameDispatcher.js:103:103)
+    at DispatcherConnection.dispatch (C:\Users\user\AppData\Local\Temp\playwright-java-307849707808395397\package\lib\server\dispatchers\dispatcher.js:313:46)
+}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 30000ms exceeded.
+=========================== logs ===========================
+waiting for locator("xpath=(//like-button-view-model[@class='YtLikeButtonViewModelHost'])[1]") to be visible
+============================================================
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+=========================== logs ===========================
+waiting for locator("xpath=(//like-button-view-model[@class='YtLikeButtonViewModelHost'])[1]") to be visible
+============================================================
+    at ProgressController.run (C:\Users\user\AppData\Local\Temp\playwright-java-307849707808395397\package\lib\server\progress.js:88:26)
+    at Frame.waitForSelector (C:\Users\user\AppData\Local\Temp\playwright-java-307849707808395397\package\lib\server\frames.js:618:23)
+    at FrameDispatcher.waitForSelector (C:\Users\user\AppData\Local\Temp\playwright-java-307849707808395397\package\lib\server\dispatchers\frameDispatcher.js:103:103)
+    at DispatcherConnection.dispatch (C:\Users\user\AppData\Local\Temp\playwright-java-307849707808395397\package\lib\server\dispatchers\dispatcher.js:313:46)
+}
+at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:111)
+at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:126)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:102)
+at com.microsoft.playwright.impl.FrameImpl.waitForSelectorImpl(FrameImpl.java:1064)
+at com.microsoft.playwright.impl.LocatorImpl.lambda$waitForImpl$7(LocatorImpl.java:594)
+at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:87)
+at com.microsoft.playwright.impl.LocatorImpl.waitForImpl(LocatorImpl.java:594)
+at com.microsoft.playwright.impl.LocatorImpl.waitFor(LocatorImpl.java:590)
+at com.microsoft.playwright.Locator.waitFor(Locator.java:5062)
+at org.example.pages.SearchPage.getLikeButton(SearchPage.java:37)
+at org.example.tests.SearchVideoTest.searchVideo(SearchVideoTest.java:25)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 30000ms exceeded.
+=========================== logs ===========================
+waiting for locator("xpath=(//like-button-view-model[@class='YtLikeButtonViewModelHost'])[1]") to be visible
+============================================================
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+=========================== logs ===========================
+waiting for locator("xpath=(//like-button-view-model[@class='YtLikeButtonViewModelHost'])[1]") to be visible
+============================================================
+    at ProgressController.run (C:\Users\user\AppData\Local\Temp\playwright-java-307849707808395397\package\lib\server\progress.js:88:26)
+    at Frame.waitForSelector (C:\Users\user\AppData\Local\Temp\playwright-java-307849707808395397\package\lib\server\frames.js:618:23)
+    at FrameDispatcher.waitForSelector (C:\Users\user\AppData\Local\Temp\playwright-java-307849707808395397\package\lib\server\dispatchers\frameDispatcher.js:103:103)
+    at DispatcherConnection.dispatch (C:\Users\user\AppData\Local\Temp\playwright-java-307849707808395397\package\lib\server\dispatchers\dispatcher.js:313:46)
+}
+at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:224)
+at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:206)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:109)
+... 45 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.microsoft.playwright.TimeoutError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchVideo -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:org.example.tests.SearchVideoTest@140c9f39]" started-at="2023-12-05T00:55:37 EET" name="tearDown" finished-at="2023-12-05T00:55:38 EET" duration-ms="520" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=searchVideo status=FAILURE method=SearchVideoTest.searchVideo()[pri:0, instance:org.example.tests.SearchVideoTest@140c9f39] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- org.example.tests.SearchVideoTest -->
+      <class name="org.example.tests.HomepageTest">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:org.example.tests.HomepageTest@1f97cf0d]" started-at="2023-12-05T00:54:50 EET" name="setUp" finished-at="2023-12-05T00:54:58 EET" duration-ms="8483" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyHeadingIsVisible()[pri:0, instance:org.example.tests.HomepageTest@1f97cf0d]" started-at="2023-12-05T00:54:58 EET" name="verifyHeadingIsVisible" finished-at="2023-12-05T00:54:59 EET" duration-ms="201" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHeadingIsVisible -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:org.example.tests.HomepageTest@1f97cf0d]" started-at="2023-12-05T00:54:59 EET" name="tearDown" finished-at="2023-12-05T00:54:59 EET" duration-ms="4" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyHeadingIsVisible status=SUCCESS method=HomepageTest.verifyHeadingIsVisible()[pri:0, instance:org.example.tests.HomepageTest@1f97cf0d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- org.example.tests.HomepageTest -->
+      <class name="org.example.tests.ShortsTest">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:org.example.tests.ShortsTest@4d910fd6]" started-at="2023-12-05T00:55:38 EET" name="setUp" finished-at="2023-12-05T00:55:41 EET" duration-ms="3089" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="shortsTest()[pri:0, instance:org.example.tests.ShortsTest@4d910fd6]" started-at="2023-12-05T00:55:41 EET" name="shortsTest" finished-at="2023-12-05T00:55:45 EET" duration-ms="3452" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shortsTest -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:org.example.tests.ShortsTest@4d910fd6]" started-at="2023-12-05T00:55:45 EET" name="tearDown" finished-at="2023-12-05T00:55:45 EET" duration-ms="8" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=shortsTest status=SUCCESS method=ShortsTest.shortsTest()[pri:0, instance:org.example.tests.ShortsTest@4d910fd6] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- org.example.tests.ShortsTest -->
     </test> <!-- Command line test -->
-  </suite> <!-- org.example.tests.VerifyUnaccessTest -->
+  </suite> <!-- Command line suite -->
 </testng-results>
