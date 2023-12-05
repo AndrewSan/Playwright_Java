@@ -13,6 +13,13 @@ public class VerifyUnaccessTest extends BaseTest {
     @Test
     public void verifyUnaccess() {
 
+        /*
+        - Try to open user page
+        - verify access denied
+        - open history page
+        - verify access denied
+        */
+
         PlaywrightAssertions.assertThat(Pages.getHomePage().getMainLogo()).isVisible();
         PlaywrightAssertions.assertThat(Pages.getHomePage().getSearchInput()).isVisible();
         PlaywrightAssertions.assertThat(Pages.getHomePage().getSearchButton()).isVisible();

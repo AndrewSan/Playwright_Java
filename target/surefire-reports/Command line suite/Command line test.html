@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>3/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Dec 05 00:54:50 EET 2023</td>
+<td>Started on:</td><td>Tue Dec 05 23:55:25 EET 2023</td>
 </tr>
-<tr><td>Total time:</td><td>62 seconds (62970 ms)</td>
+<tr><td>Total time:</td><td>47 seconds (47420 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -77,22 +77,32 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='org.example.tests.SearchVideoTest.searchVideo()'><b>searchVideo</b><br>Test class: org.example.tests.SearchVideoTest</td>
-<td><div><pre>com.microsoft.playwright.TimeoutError: Error {
-  message=&apos;Timeout 30000ms exceeded.
+<td><div><pre>com.microsoft.playwright.PlaywrightException: Error {
+  message=&apos;Error: strict mode violation: locator(&quot;xpath=//yt-button-shape[@id=&apos;subscribe-button-shape&apos;]&quot;) resolved to 2 elements:
+    1) &lt;yt-button-shape version=&quot;modern&quot; id=&quot;subscribe-button-shape&quot; cla…&gt;…&lt;/yt-button-shape&gt; aka locator(&quot;#owner #subscribe-button-shape&quot;)
+    2) &lt;yt-button-shape version=&quot;modern&quot; id=&quot;subscribe-button-shape&quot; cla…&gt;…&lt;/yt-button-shape&gt; aka locator(&quot;#meta-contents #subscribe-button-shape&quot;)
+
 =========================== logs ===========================
-waiting for locator(&quot;xpath=(//like-button-view-model[@class=&apos;YtLikeButtonViewModelHost&apos;])[1]&quot;) to be visible
+waiting for locator(&quot;xpath=//yt-button-shape[@id=&apos;subscribe-button-shape&apos;]&quot;) to be visible
 ============================================================
-  name=&apos;TimeoutError
-  stack=&apos;TimeoutError: Timeout 30000ms exceeded.
+  name=&apos;Error
+  stack=&apos;Error: Error: strict mode violation: locator(&quot;xpath=//yt-button-shape[@id=&apos;subscribe-button-shape&apos;]&quot;) resolved to 2 elements:
+    1) &lt;yt-button-shape version=&quot;modern&quot; id=&quot;subscribe-button-shape&quot; cla…&gt;…&lt;/yt-button-shape&gt; aka locator(&quot;#owner #subscribe-button-shape&quot;)
+    2) &lt;yt-button-shape version=&quot;modern&quot; id=&quot;subscribe-button-shape&quot; cla…&gt;…&lt;/yt-button-shape&gt; aka locator(&quot;#meta-contents #subscribe-button-shape&quot;)
+
 =========================== logs ===========================
-waiting for locator(&quot;xpath=(//like-button-view-model[@class=&apos;YtLikeButtonViewModelHost&apos;])[1]&quot;) to be visible
+waiting for locator(&quot;xpath=//yt-button-shape[@id=&apos;subscribe-button-shape&apos;]&quot;) to be visible
 ============================================================
-    at ProgressController.run (C:\Users\user\AppData\Local\Temp\playwright-java-307849707808395397\package\lib\server\progress.js:88:26)
-    at Frame.waitForSelector (C:\Users\user\AppData\Local\Temp\playwright-java-307849707808395397\package\lib\server\frames.js:618:23)
-    at FrameDispatcher.waitForSelector (C:\Users\user\AppData\Local\Temp\playwright-java-307849707808395397\package\lib\server\dispatchers\frameDispatcher.js:103:103)
-    at DispatcherConnection.dispatch (C:\Users\user\AppData\Local\Temp\playwright-java-307849707808395397\package\lib\server\dispatchers\dispatcher.js:313:46)
+    at CRExecutionContext.evaluateWithArguments (C:\Users\user\AppData\Local\Temp\playwright-java-5618149587187685053\package\lib\server\chromium\crExecutionContext.js:92:33)
+    at async LongStandingScope._race (C:\Users\user\AppData\Local\Temp\playwright-java-5618149587187685053\package\lib\utils\manualPromise.js:98:14)
+    at async evaluateExpression (C:\Users\user\AppData\Local\Temp\playwright-java-5618149587187685053\package\lib\server\javascript.js:241:12)
+    at async C:\Users\user\AppData\Local\Temp\playwright-java-5618149587187685053\package\lib\server\frames.js:627:24
+    at async Frame.retryWithProgressAndTimeouts (C:\Users\user\AppData\Local\Temp\playwright-java-5618149587187685053\package\lib\server\frames.js:911:24)
+    at async ProgressController.run (C:\Users\user\AppData\Local\Temp\playwright-java-5618149587187685053\package\lib\server\progress.js:92:22)
+    at async FrameDispatcher.waitForSelector (C:\Users\user\AppData\Local\Temp\playwright-java-5618149587187685053\package\lib\server\dispatchers\frameDispatcher.js:103:85)
+    at async DispatcherConnection.dispatch (C:\Users\user\AppData\Local\Temp\playwright-java-5618149587187685053\package\lib\server\dispatchers\dispatcher.js:313:22)
 }
-	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
 	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:111)
 	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:126)
 	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:102)
@@ -103,45 +113,65 @@ waiting for locator(&quot;xpath=(//like-button-view-model[@class=&apos;YtLikeBut
 	at com.microsoft.playwright.impl.LocatorImpl.waitForImpl(LocatorImpl.java:594)
 	at com.microsoft.playwright.impl.LocatorImpl.waitFor(LocatorImpl.java:590)
 	at com.microsoft.playwright.Locator.waitFor(Locator.java:5062)
-	at org.example.pages.SearchPage.getLikeButton(SearchPage.java:37)
-	at org.example.tests.SearchVideoTest.searchVideo(SearchVideoTest.java:25)
+	at org.example.pages.SearchPage.getSubscribeButton(SearchPage.java:34)
+	at org.example.tests.SearchVideoTest.searchVideo(SearchVideoTest.java:24)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-Caused by: com.microsoft.playwright.TimeoutError: Error {
-  message=&apos;Timeout 30000ms exceeded.
+Caused by: com.microsoft.playwright.impl.DriverException: Error {
+  message=&apos;Error: strict mode violation: locator(&quot;xpath=//yt-button-shape[@id=&apos;subscribe-button-shape&apos;]&quot;) resolved to 2 elements:
+    1) &lt;yt-button-shape version=&quot;modern&quot; id=&quot;subscribe-button-shape&quot; cla…&gt;…&lt;/yt-button-shape&gt; aka locator(&quot;#owner #subscribe-button-shape&quot;)
+    2) &lt;yt-button-shape version=&quot;modern&quot; id=&quot;subscribe-button-shape&quot; cla…&gt;…&lt;/yt-button-shape&gt; aka locator(&quot;#meta-contents #subscribe-button-shape&quot;)
+
 =========================== logs ===========================
-waiting for locator(&quot;xpath=(//like-button-view-model[@class=&apos;YtLikeButtonViewModelHost&apos;])[1]&quot;) to be visible
+waiting for locator(&quot;xpath=//yt-button-shape[@id=&apos;subscribe-button-shape&apos;]&quot;) to be visible
 ============================================================
-  name=&apos;TimeoutError
-  stack=&apos;TimeoutError: Timeout 30000ms exceeded.
+  name=&apos;Error
+  stack=&apos;Error: Error: strict mode violation: locator(&quot;xpath=//yt-button-shape[@id=&apos;subscribe-button-shape&apos;]&quot;) resolved to 2 elements:
+    1) &lt;yt-button-shape version=&quot;modern&quot; id=&quot;subscribe-button-shape&quot; cla…&gt;…&lt;/yt-button-shape&gt; aka locator(&quot;#owner #subscribe-button-shape&quot;)
+    2) &lt;yt-button-shape version=&quot;modern&quot; id=&quot;subscribe-button-shape&quot; cla…&gt;…&lt;/yt-button-shape&gt; aka locator(&quot;#meta-contents #subscribe-button-shape&quot;)
+
 =========================== logs ===========================
-waiting for locator(&quot;xpath=(//like-button-view-model[@class=&apos;YtLikeButtonViewModelHost&apos;])[1]&quot;) to be visible
+waiting for locator(&quot;xpath=//yt-button-shape[@id=&apos;subscribe-button-shape&apos;]&quot;) to be visible
 ============================================================
-    at ProgressController.run (C:\Users\user\AppData\Local\Temp\playwright-java-307849707808395397\package\lib\server\progress.js:88:26)
-    at Frame.waitForSelector (C:\Users\user\AppData\Local\Temp\playwright-java-307849707808395397\package\lib\server\frames.js:618:23)
-    at FrameDispatcher.waitForSelector (C:\Users\user\AppData\Local\Temp\playwright-java-307849707808395397\package\lib\server\dispatchers\frameDispatcher.js:103:103)
-    at DispatcherConnection.dispatch (C:\Users\user\AppData\Local\Temp\playwright-java-307849707808395397\package\lib\server\dispatchers\dispatcher.js:313:46)
+    at CRExecutionContext.evaluateWithArguments (C:\Users\user\AppData\Local\Temp\playwright-java-5618149587187685053\package\lib\server\chromium\crExecutionContext.js:92:33)
+    at async LongStandingScope._race (C:\Users\user\AppData\Local\Temp\playwright-java-5618149587187685053\package\lib\utils\manualPromise.js:98:14)
+    at async evaluateExpression (C:\Users\user\AppData\Local\Temp\playwright-java-5618149587187685053\package\lib\server\javascript.js:241:12)
+    at async C:\Users\user\AppData\Local\Temp\playwright-java-5618149587187685053\package\lib\server\frames.js:627:24
+    at async Frame.retryWithProgressAndTimeouts (C:\Users\user\AppData\Local\Temp\playwright-java-5618149587187685053\package\lib\server\frames.js:911:24)
+    at async ProgressController.run (C:\Users\user\AppData\Local\Temp\playwright-java-5618149587187685053\package\lib\server\progress.js:92:22)
+    at async FrameDispatcher.waitForSelector (C:\Users\user\AppData\Local\Temp\playwright-java-5618149587187685053\package\lib\server\dispatchers\frameDispatcher.js:103:85)
+    at async DispatcherConnection.dispatch (C:\Users\user\AppData\Local\Temp\playwright-java-5618149587187685053\package\lib\server\dispatchers\dispatcher.js:313:22)
 }
-	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:224)
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:226)
 	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:206)
 	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:109)
 	... 45 more
-... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1423016050", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1423016050'><pre>com.microsoft.playwright.TimeoutError: Error {
-  message=&apos;Timeout 30000ms exceeded.
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1112527632", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1112527632'><pre>com.microsoft.playwright.PlaywrightException: Error {
+  message=&apos;Error: strict mode violation: locator(&quot;xpath=//yt-button-shape[@id=&apos;subscribe-button-shape&apos;]&quot;) resolved to 2 elements:
+    1) &lt;yt-button-shape version=&quot;modern&quot; id=&quot;subscribe-button-shape&quot; cla…&gt;…&lt;/yt-button-shape&gt; aka locator(&quot;#owner #subscribe-button-shape&quot;)
+    2) &lt;yt-button-shape version=&quot;modern&quot; id=&quot;subscribe-button-shape&quot; cla…&gt;…&lt;/yt-button-shape&gt; aka locator(&quot;#meta-contents #subscribe-button-shape&quot;)
+
 =========================== logs ===========================
-waiting for locator(&quot;xpath=(//like-button-view-model[@class=&apos;YtLikeButtonViewModelHost&apos;])[1]&quot;) to be visible
+waiting for locator(&quot;xpath=//yt-button-shape[@id=&apos;subscribe-button-shape&apos;]&quot;) to be visible
 ============================================================
-  name=&apos;TimeoutError
-  stack=&apos;TimeoutError: Timeout 30000ms exceeded.
+  name=&apos;Error
+  stack=&apos;Error: Error: strict mode violation: locator(&quot;xpath=//yt-button-shape[@id=&apos;subscribe-button-shape&apos;]&quot;) resolved to 2 elements:
+    1) &lt;yt-button-shape version=&quot;modern&quot; id=&quot;subscribe-button-shape&quot; cla…&gt;…&lt;/yt-button-shape&gt; aka locator(&quot;#owner #subscribe-button-shape&quot;)
+    2) &lt;yt-button-shape version=&quot;modern&quot; id=&quot;subscribe-button-shape&quot; cla…&gt;…&lt;/yt-button-shape&gt; aka locator(&quot;#meta-contents #subscribe-button-shape&quot;)
+
 =========================== logs ===========================
-waiting for locator(&quot;xpath=(//like-button-view-model[@class=&apos;YtLikeButtonViewModelHost&apos;])[1]&quot;) to be visible
+waiting for locator(&quot;xpath=//yt-button-shape[@id=&apos;subscribe-button-shape&apos;]&quot;) to be visible
 ============================================================
-    at ProgressController.run (C:\Users\user\AppData\Local\Temp\playwright-java-307849707808395397\package\lib\server\progress.js:88:26)
-    at Frame.waitForSelector (C:\Users\user\AppData\Local\Temp\playwright-java-307849707808395397\package\lib\server\frames.js:618:23)
-    at FrameDispatcher.waitForSelector (C:\Users\user\AppData\Local\Temp\playwright-java-307849707808395397\package\lib\server\dispatchers\frameDispatcher.js:103:103)
-    at DispatcherConnection.dispatch (C:\Users\user\AppData\Local\Temp\playwright-java-307849707808395397\package\lib\server\dispatchers\dispatcher.js:313:46)
+    at CRExecutionContext.evaluateWithArguments (C:\Users\user\AppData\Local\Temp\playwright-java-5618149587187685053\package\lib\server\chromium\crExecutionContext.js:92:33)
+    at async LongStandingScope._race (C:\Users\user\AppData\Local\Temp\playwright-java-5618149587187685053\package\lib\utils\manualPromise.js:98:14)
+    at async evaluateExpression (C:\Users\user\AppData\Local\Temp\playwright-java-5618149587187685053\package\lib\server\javascript.js:241:12)
+    at async C:\Users\user\AppData\Local\Temp\playwright-java-5618149587187685053\package\lib\server\frames.js:627:24
+    at async Frame.retryWithProgressAndTimeouts (C:\Users\user\AppData\Local\Temp\playwright-java-5618149587187685053\package\lib\server\frames.js:911:24)
+    at async ProgressController.run (C:\Users\user\AppData\Local\Temp\playwright-java-5618149587187685053\package\lib\server\progress.js:92:22)
+    at async FrameDispatcher.waitForSelector (C:\Users\user\AppData\Local\Temp\playwright-java-5618149587187685053\package\lib\server\dispatchers\frameDispatcher.js:103:85)
+    at async DispatcherConnection.dispatch (C:\Users\user\AppData\Local\Temp\playwright-java-5618149587187685053\package\lib\server\dispatchers\dispatcher.js:313:22)
 }
-	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
 	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:111)
 	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:126)
 	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:102)
@@ -152,8 +182,8 @@ waiting for locator(&quot;xpath=(//like-button-view-model[@class=&apos;YtLikeBut
 	at com.microsoft.playwright.impl.LocatorImpl.waitForImpl(LocatorImpl.java:594)
 	at com.microsoft.playwright.impl.LocatorImpl.waitFor(LocatorImpl.java:590)
 	at com.microsoft.playwright.Locator.waitFor(Locator.java:5062)
-	at org.example.pages.SearchPage.getLikeButton(SearchPage.java:37)
-	at org.example.tests.SearchVideoTest.searchVideo(SearchVideoTest.java:25)
+	at org.example.pages.SearchPage.getSubscribeButton(SearchPage.java:34)
+	at org.example.tests.SearchVideoTest.searchVideo(SearchVideoTest.java:24)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -188,27 +218,37 @@ waiting for locator(&quot;xpath=(//like-button-view-model[@class=&apos;YtLikeBut
 	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-Caused by: com.microsoft.playwright.TimeoutError: Error {
-  message=&apos;Timeout 30000ms exceeded.
+Caused by: com.microsoft.playwright.impl.DriverException: Error {
+  message=&apos;Error: strict mode violation: locator(&quot;xpath=//yt-button-shape[@id=&apos;subscribe-button-shape&apos;]&quot;) resolved to 2 elements:
+    1) &lt;yt-button-shape version=&quot;modern&quot; id=&quot;subscribe-button-shape&quot; cla…&gt;…&lt;/yt-button-shape&gt; aka locator(&quot;#owner #subscribe-button-shape&quot;)
+    2) &lt;yt-button-shape version=&quot;modern&quot; id=&quot;subscribe-button-shape&quot; cla…&gt;…&lt;/yt-button-shape&gt; aka locator(&quot;#meta-contents #subscribe-button-shape&quot;)
+
 =========================== logs ===========================
-waiting for locator(&quot;xpath=(//like-button-view-model[@class=&apos;YtLikeButtonViewModelHost&apos;])[1]&quot;) to be visible
+waiting for locator(&quot;xpath=//yt-button-shape[@id=&apos;subscribe-button-shape&apos;]&quot;) to be visible
 ============================================================
-  name=&apos;TimeoutError
-  stack=&apos;TimeoutError: Timeout 30000ms exceeded.
+  name=&apos;Error
+  stack=&apos;Error: Error: strict mode violation: locator(&quot;xpath=//yt-button-shape[@id=&apos;subscribe-button-shape&apos;]&quot;) resolved to 2 elements:
+    1) &lt;yt-button-shape version=&quot;modern&quot; id=&quot;subscribe-button-shape&quot; cla…&gt;…&lt;/yt-button-shape&gt; aka locator(&quot;#owner #subscribe-button-shape&quot;)
+    2) &lt;yt-button-shape version=&quot;modern&quot; id=&quot;subscribe-button-shape&quot; cla…&gt;…&lt;/yt-button-shape&gt; aka locator(&quot;#meta-contents #subscribe-button-shape&quot;)
+
 =========================== logs ===========================
-waiting for locator(&quot;xpath=(//like-button-view-model[@class=&apos;YtLikeButtonViewModelHost&apos;])[1]&quot;) to be visible
+waiting for locator(&quot;xpath=//yt-button-shape[@id=&apos;subscribe-button-shape&apos;]&quot;) to be visible
 ============================================================
-    at ProgressController.run (C:\Users\user\AppData\Local\Temp\playwright-java-307849707808395397\package\lib\server\progress.js:88:26)
-    at Frame.waitForSelector (C:\Users\user\AppData\Local\Temp\playwright-java-307849707808395397\package\lib\server\frames.js:618:23)
-    at FrameDispatcher.waitForSelector (C:\Users\user\AppData\Local\Temp\playwright-java-307849707808395397\package\lib\server\dispatchers\frameDispatcher.js:103:103)
-    at DispatcherConnection.dispatch (C:\Users\user\AppData\Local\Temp\playwright-java-307849707808395397\package\lib\server\dispatchers\dispatcher.js:313:46)
+    at CRExecutionContext.evaluateWithArguments (C:\Users\user\AppData\Local\Temp\playwright-java-5618149587187685053\package\lib\server\chromium\crExecutionContext.js:92:33)
+    at async LongStandingScope._race (C:\Users\user\AppData\Local\Temp\playwright-java-5618149587187685053\package\lib\utils\manualPromise.js:98:14)
+    at async evaluateExpression (C:\Users\user\AppData\Local\Temp\playwright-java-5618149587187685053\package\lib\server\javascript.js:241:12)
+    at async C:\Users\user\AppData\Local\Temp\playwright-java-5618149587187685053\package\lib\server\frames.js:627:24
+    at async Frame.retryWithProgressAndTimeouts (C:\Users\user\AppData\Local\Temp\playwright-java-5618149587187685053\package\lib\server\frames.js:911:24)
+    at async ProgressController.run (C:\Users\user\AppData\Local\Temp\playwright-java-5618149587187685053\package\lib\server\progress.js:92:22)
+    at async FrameDispatcher.waitForSelector (C:\Users\user\AppData\Local\Temp\playwright-java-5618149587187685053\package\lib\server\dispatchers\frameDispatcher.js:103:85)
+    at async DispatcherConnection.dispatch (C:\Users\user\AppData\Local\Temp\playwright-java-5618149587187685053\package\lib\server\dispatchers\dispatcher.js:313:22)
 }
-	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:224)
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:226)
 	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:206)
 	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:109)
 	... 45 more
 </pre></div></td>
-<td>35</td>
+<td>4</td>
 <td>org.example.tests.SearchVideoTest@140c9f39</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
@@ -220,20 +260,20 @@ waiting for locator(&quot;xpath=(//like-button-view-model[@class=&apos;YtLikeBut
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<td title='org.example.tests.ShortsTest.shortsTest()'><b>shortsTest</b><br>Test class: org.example.tests.ShortsTest</td>
+<td></td>
+<td>2</td>
+<td>org.example.tests.ShortsTest@4d910fd6</td></tr>
+<tr>
+<td title='org.example.tests.VerifyUnaccessTest.verifyUnaccess()'><b>verifyUnaccess</b><br>Test class: org.example.tests.VerifyUnaccessTest</td>
+<td></td>
+<td>5</td>
+<td>org.example.tests.VerifyUnaccessTest@26275bef</td></tr>
+<tr>
 <td title='org.example.tests.HomepageTest.verifyHeadingIsVisible()'><b>verifyHeadingIsVisible</b><br>Test class: org.example.tests.HomepageTest</td>
 <td></td>
 <td>0</td>
 <td>org.example.tests.HomepageTest@1f97cf0d</td></tr>
-<tr>
-<td title='org.example.tests.VerifyUnaccessTest.verifyUnaccess()'><b>verifyUnaccess</b><br>Test class: org.example.tests.VerifyUnaccessTest</td>
-<td></td>
-<td>4</td>
-<td>org.example.tests.VerifyUnaccessTest@26275bef</td></tr>
-<tr>
-<td title='org.example.tests.ShortsTest.shortsTest()'><b>shortsTest</b><br>Test class: org.example.tests.ShortsTest</td>
-<td></td>
-<td>3</td>
-<td>org.example.tests.ShortsTest@4d910fd6</td></tr>
 </table><p>
 </body>
 </html>

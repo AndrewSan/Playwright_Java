@@ -11,6 +11,12 @@ public class SearchVideoTest extends BaseTest {
     // Trying Assert
     @Test
     public void searchVideo() {
+
+        /*
+        - Try to find specific video
+        - verify like/dislike buttons exist
+        */
+
         PlaywrightAssertions.assertThat(Pages.getHomePage().getSearchInput()).isVisible();
         PlaywrightAssertions.assertThat(Pages.getHomePage().getSearchButton()).isVisible();
 

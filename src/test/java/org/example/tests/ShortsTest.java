@@ -10,6 +10,11 @@ public class ShortsTest extends BaseTest {
     @Test
     public void shortsTest() {
 
+        /*
+        - Try to open youtube shorts video
+        - verify like button, comment button, share button
+        */
+
         PlaywrightAssertions.assertThat(Pages.getHomePage().getMainLogo()).isVisible();
         PlaywrightAssertions.assertThat(Pages.getHomePage().getSearchInput()).isVisible();
         PlaywrightAssertions.assertThat(Pages.getHomePage().getSearchButton()).isVisible();
