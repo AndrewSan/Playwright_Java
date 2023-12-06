@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="1" failures="1" name="org.example.tests.SearchVideoTest" time="33.804" errors="0" skipped="0">
+<testsuite tests="1" failures="0" name="org.example.tests.SearchVideoTest" time="3.857" errors="0" skipped="0">
   <properties>
     <property name="idea.version" value="2022.2.5"/>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
@@ -65,74 +65,5 @@
     <property name="sun.stdout.encoding" value="UTF-8"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="org.example.tests.SearchVideoTest" name="searchVideo" time="33.804">
-    <failure message="Error {
-  message=&apos;Timeout 30000ms exceeded.
-=========================== logs ===========================
-waiting for locator(&quot;xpath=(//like-button-view-model[@class=&apos;YtLikeButtonViewModelHost&apos;])[1]&quot;) to be visible
-============================================================
-  name=&apos;TimeoutError
-  stack=&apos;TimeoutError: Timeout 30000ms exceeded.
-=========================== logs ===========================
-waiting for locator(&quot;xpath=(//like-button-view-model[@class=&apos;YtLikeButtonViewModelHost&apos;])[1]&quot;) to be visible
-============================================================
-    at ProgressController.run (C:\Users\user\AppData\Local\Temp\playwright-java-11131949049604380511\package\lib\server\progress.js:88:26)
-    at Frame.waitForSelector (C:\Users\user\AppData\Local\Temp\playwright-java-11131949049604380511\package\lib\server\frames.js:618:23)
-    at FrameDispatcher.waitForSelector (C:\Users\user\AppData\Local\Temp\playwright-java-11131949049604380511\package\lib\server\dispatchers\frameDispatcher.js:103:103)
-    at DispatcherConnection.dispatch (C:\Users\user\AppData\Local\Temp\playwright-java-11131949049604380511\package\lib\server\dispatchers\dispatcher.js:313:46)
-}" type="com.microsoft.playwright.TimeoutError">com.microsoft.playwright.TimeoutError: Error {
-  message=&apos;Timeout 30000ms exceeded.
-=========================== logs ===========================
-waiting for locator(&quot;xpath=(//like-button-view-model[@class=&apos;YtLikeButtonViewModelHost&apos;])[1]&quot;) to be visible
-============================================================
-  name=&apos;TimeoutError
-  stack=&apos;TimeoutError: Timeout 30000ms exceeded.
-=========================== logs ===========================
-waiting for locator(&quot;xpath=(//like-button-view-model[@class=&apos;YtLikeButtonViewModelHost&apos;])[1]&quot;) to be visible
-============================================================
-    at ProgressController.run (C:\Users\user\AppData\Local\Temp\playwright-java-11131949049604380511\package\lib\server\progress.js:88:26)
-    at Frame.waitForSelector (C:\Users\user\AppData\Local\Temp\playwright-java-11131949049604380511\package\lib\server\frames.js:618:23)
-    at FrameDispatcher.waitForSelector (C:\Users\user\AppData\Local\Temp\playwright-java-11131949049604380511\package\lib\server\dispatchers\frameDispatcher.js:103:103)
-    at DispatcherConnection.dispatch (C:\Users\user\AppData\Local\Temp\playwright-java-11131949049604380511\package\lib\server\dispatchers\dispatcher.js:313:46)
-}
-	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:111)
-	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:126)
-	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:102)
-	at com.microsoft.playwright.impl.FrameImpl.waitForSelectorImpl(FrameImpl.java:1064)
-	at com.microsoft.playwright.impl.LocatorImpl.lambda$waitForImpl$7(LocatorImpl.java:594)
-	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
-	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:87)
-	at com.microsoft.playwright.impl.LocatorImpl.waitForImpl(LocatorImpl.java:594)
-	at com.microsoft.playwright.impl.LocatorImpl.waitFor(LocatorImpl.java:590)
-	at com.microsoft.playwright.Locator.waitFor(Locator.java:5062)
-	at org.example.pages.SearchPage.getLikeButton(SearchPage.java:37)
-	at org.example.tests.SearchVideoTest.searchVideo(SearchVideoTest.java:25)
-Caused by: com.microsoft.playwright.TimeoutError: Error {
-  message=&apos;Timeout 30000ms exceeded.
-=========================== logs ===========================
-waiting for locator(&quot;xpath=(//like-button-view-model[@class=&apos;YtLikeButtonViewModelHost&apos;])[1]&quot;) to be visible
-============================================================
-  name=&apos;TimeoutError
-  stack=&apos;TimeoutError: Timeout 30000ms exceeded.
-=========================== logs ===========================
-waiting for locator(&quot;xpath=(//like-button-view-model[@class=&apos;YtLikeButtonViewModelHost&apos;])[1]&quot;) to be visible
-============================================================
-    at ProgressController.run (C:\Users\user\AppData\Local\Temp\playwright-java-11131949049604380511\package\lib\server\progress.js:88:26)
-    at Frame.waitForSelector (C:\Users\user\AppData\Local\Temp\playwright-java-11131949049604380511\package\lib\server\frames.js:618:23)
-    at FrameDispatcher.waitForSelector (C:\Users\user\AppData\Local\Temp\playwright-java-11131949049604380511\package\lib\server\dispatchers\frameDispatcher.js:103:103)
-    at DispatcherConnection.dispatch (C:\Users\user\AppData\Local\Temp\playwright-java-11131949049604380511\package\lib\server\dispatchers\dispatcher.js:313:46)
-}
-	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:224)
-	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:206)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:109)
-	... 44 more
-</failure>
-    <system-out>Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNG652Configurator@1b40d5f0
-</system-out>
-    <system-err>SLF4J: Failed to load class &quot;org.slf4j.impl.StaticLoggerBinder&quot;.
-SLF4J: Defaulting to no-operation (NOP) logger implementation
-SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-</system-err>
-  </testcase>
+  <testcase classname="org.example.tests.SearchVideoTest" name="searchVideo" time="3.857"/>
 </testsuite>

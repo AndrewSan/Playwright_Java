@@ -33,7 +33,7 @@ public class BaseTest {
 
         Playwright playwright = Playwright.create();
         BrowserType browserType = playwright.chromium();
-        Browser browser = browserType.launch(new BrowserType.LaunchOptions().setHeadless(false));
+        Browser browser = browserType.launch(new BrowserType.LaunchOptions().setChannel("chrome").setHeadless(false));
         BrowserContext context;
         if(Boolean.parseBoolean(System.getProperty("recordVideo", "false")))
             context = browser.newContext(new Browser.NewContextOptions().setRecordVideoDir(Paths.get("video/")).setViewportSize(1920,1080));

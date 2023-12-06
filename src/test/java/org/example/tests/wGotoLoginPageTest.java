@@ -1,12 +1,11 @@
 package org.example.tests;
 
-import com.microsoft.playwright.Page;
 import com.microsoft.playwright.assertions.PlaywrightAssertions;
 import org.example.base.BaseTest;
 import org.example.pages.Pages;
 import org.testng.annotations.Test;
 
-public class gotoLoginPageTest extends BaseTest {
+public class wGotoLoginPageTest extends BaseTest {
 
     @Test
     public void openSettingsAndFaceLoginPage() {

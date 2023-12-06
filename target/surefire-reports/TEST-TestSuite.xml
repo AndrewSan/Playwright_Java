@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="4" failures="1" name="TestSuite" time="13.102" errors="0" skipped="0">
+<testsuite tests="5" failures="0" name="TestSuite" time="10.102" errors="0" skipped="0">
   <properties>
     <property name="idea.version" value="2022.2.5"/>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
@@ -29,7 +29,6 @@
     <property name="os.name" value="Windows 10"/>
     <property name="maven.ext.class.path" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.2.1\plugins\maven\lib\maven-event-listener.jar"/>
     <property name="classworlds.conf" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.2.1\plugins\maven\lib\maven3\bin\m2.conf"/>
-    <property name="recordVideo" value="true"/>
     <property name="sun.jnu.encoding" value="Cp1251"/>
     <property name="stdout.encoding" value="UTF-8"/>
     <property name="java.library.path" value="C:\Users\user\.jdks\openjdk-21.0.1\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Gapotchenko\Eazfuscator.NET;C:\Program Files (x86)\Eziriz\IntelliLock;C:\Program Files (x86)\Eziriz\.NET Reactor;C:\PROGRA~2\Borland\CBUILD~1\Bin;C:\PROGRA~2\Borland\CBUILD~1\Projects\Bpl;D:\oracle\dbhomeXE\bin;C:\Program Files\Python38\Scripts\;C:\Program Files\Python38\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\PuTTY\;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Program Files\apache-maven-3.6.3\bin;C:\Program Files\TortoiseGit\bin;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Java\jdk-11.0.9\bin;C:\xampp\php;D:\haxe\haxe;D:\haxe\neko;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Android;C:\Windows\System32;C:\Program Files (x86)\dotnet\;C:\Program Files\Docker\Docker\resources\bin;C:\Users\user\scoop\shims;C:\Users\user\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Java\jdk-11.0.9;C:\Users\user\AppData\Roaming\npm;C:\Users\user\.dotnet\tools;C:\Program Files (x86)\Nmap;D:\gradle-6.8.3\bin;D:\adb;C:\Users\user\AppData\Local\Programs\Fiddler;C:\Users\user\AppData\Local\GitHubDesktop\bin;C:\Users\user\Desktop\olb-autotests12\allure-2.17.1\bin;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.2.1\bin;;C:\Users\user\Desktop\php;."/>
@@ -47,7 +46,7 @@
     <property name="java.class.path" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.2.1\plugins\maven\lib\maven3\boot\plexus-classworlds-2.6.0.jar;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.2.1\plugins\maven\lib\maven3\boot\plexus-classworlds.license"/>
     <property name="java.vm.specification.version" value="21"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version=2022.2.5 test -DrecordVideo=true"/>
+    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version=2022.2.5 test"/>
     <property name="java.home" value="C:\Users\user\.jdks\openjdk-21.0.1"/>
     <property name="user.language" value="uk"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
@@ -65,99 +64,9 @@
     <property name="sun.stdout.encoding" value="UTF-8"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="org.example.tests.HomepageTest" name="verifyHeadingIsVisible" time="0.267"/>
-  <testcase classname="org.example.tests.SearchVideoTest" name="searchVideo" time="4.934">
-    <failure message="Error {
-  message=&apos;Error: strict mode violation: locator(&quot;xpath=//yt-button-shape[@id=&apos;subscribe-button-shape&apos;]&quot;) resolved to 2 elements:
-    1) &lt;yt-button-shape version=&quot;modern&quot; id=&quot;subscribe-button-shape&quot; cla…&gt;…&lt;/yt-button-shape&gt; aka locator(&quot;#owner #subscribe-button-shape&quot;)
-    2) &lt;yt-button-shape version=&quot;modern&quot; id=&quot;subscribe-button-shape&quot; cla…&gt;…&lt;/yt-button-shape&gt; aka locator(&quot;#meta-contents #subscribe-button-shape&quot;)
-
-=========================== logs ===========================
-waiting for locator(&quot;xpath=//yt-button-shape[@id=&apos;subscribe-button-shape&apos;]&quot;) to be visible
-============================================================
-  name=&apos;Error
-  stack=&apos;Error: Error: strict mode violation: locator(&quot;xpath=//yt-button-shape[@id=&apos;subscribe-button-shape&apos;]&quot;) resolved to 2 elements:
-    1) &lt;yt-button-shape version=&quot;modern&quot; id=&quot;subscribe-button-shape&quot; cla…&gt;…&lt;/yt-button-shape&gt; aka locator(&quot;#owner #subscribe-button-shape&quot;)
-    2) &lt;yt-button-shape version=&quot;modern&quot; id=&quot;subscribe-button-shape&quot; cla…&gt;…&lt;/yt-button-shape&gt; aka locator(&quot;#meta-contents #subscribe-button-shape&quot;)
-
-=========================== logs ===========================
-waiting for locator(&quot;xpath=//yt-button-shape[@id=&apos;subscribe-button-shape&apos;]&quot;) to be visible
-============================================================
-    at CRExecutionContext.evaluateWithArguments (C:\Users\user\AppData\Local\Temp\playwright-java-5618149587187685053\package\lib\server\chromium\crExecutionContext.js:92:33)
-    at async LongStandingScope._race (C:\Users\user\AppData\Local\Temp\playwright-java-5618149587187685053\package\lib\utils\manualPromise.js:98:14)
-    at async evaluateExpression (C:\Users\user\AppData\Local\Temp\playwright-java-5618149587187685053\package\lib\server\javascript.js:241:12)
-    at async C:\Users\user\AppData\Local\Temp\playwright-java-5618149587187685053\package\lib\server\frames.js:627:24
-    at async Frame.retryWithProgressAndTimeouts (C:\Users\user\AppData\Local\Temp\playwright-java-5618149587187685053\package\lib\server\frames.js:911:24)
-    at async ProgressController.run (C:\Users\user\AppData\Local\Temp\playwright-java-5618149587187685053\package\lib\server\progress.js:92:22)
-    at async FrameDispatcher.waitForSelector (C:\Users\user\AppData\Local\Temp\playwright-java-5618149587187685053\package\lib\server\dispatchers\frameDispatcher.js:103:85)
-    at async DispatcherConnection.dispatch (C:\Users\user\AppData\Local\Temp\playwright-java-5618149587187685053\package\lib\server\dispatchers\dispatcher.js:313:22)
-}" type="com.microsoft.playwright.PlaywrightException">com.microsoft.playwright.PlaywrightException: Error {
-  message=&apos;Error: strict mode violation: locator(&quot;xpath=//yt-button-shape[@id=&apos;subscribe-button-shape&apos;]&quot;) resolved to 2 elements:
-    1) &lt;yt-button-shape version=&quot;modern&quot; id=&quot;subscribe-button-shape&quot; cla…&gt;…&lt;/yt-button-shape&gt; aka locator(&quot;#owner #subscribe-button-shape&quot;)
-    2) &lt;yt-button-shape version=&quot;modern&quot; id=&quot;subscribe-button-shape&quot; cla…&gt;…&lt;/yt-button-shape&gt; aka locator(&quot;#meta-contents #subscribe-button-shape&quot;)
-=========================== logs ===========================
-waiting for locator(&quot;xpath=//yt-button-shape[@id=&apos;subscribe-button-shape&apos;]&quot;) to be visible
-============================================================
-  name=&apos;Error
-  stack=&apos;Error: Error: strict mode violation: locator(&quot;xpath=//yt-button-shape[@id=&apos;subscribe-button-shape&apos;]&quot;) resolved to 2 elements:
-    1) &lt;yt-button-shape version=&quot;modern&quot; id=&quot;subscribe-button-shape&quot; cla…&gt;…&lt;/yt-button-shape&gt; aka locator(&quot;#owner #subscribe-button-shape&quot;)
-    2) &lt;yt-button-shape version=&quot;modern&quot; id=&quot;subscribe-button-shape&quot; cla…&gt;…&lt;/yt-button-shape&gt; aka locator(&quot;#meta-contents #subscribe-button-shape&quot;)
-=========================== logs ===========================
-waiting for locator(&quot;xpath=//yt-button-shape[@id=&apos;subscribe-button-shape&apos;]&quot;) to be visible
-============================================================
-    at CRExecutionContext.evaluateWithArguments (C:\Users\user\AppData\Local\Temp\playwright-java-5618149587187685053\package\lib\server\chromium\crExecutionContext.js:92:33)
-    at async LongStandingScope._race (C:\Users\user\AppData\Local\Temp\playwright-java-5618149587187685053\package\lib\utils\manualPromise.js:98:14)
-    at async evaluateExpression (C:\Users\user\AppData\Local\Temp\playwright-java-5618149587187685053\package\lib\server\javascript.js:241:12)
-    at async C:\Users\user\AppData\Local\Temp\playwright-java-5618149587187685053\package\lib\server\frames.js:627:24
-    at async Frame.retryWithProgressAndTimeouts (C:\Users\user\AppData\Local\Temp\playwright-java-5618149587187685053\package\lib\server\frames.js:911:24)
-    at async ProgressController.run (C:\Users\user\AppData\Local\Temp\playwright-java-5618149587187685053\package\lib\server\progress.js:92:22)
-    at async FrameDispatcher.waitForSelector (C:\Users\user\AppData\Local\Temp\playwright-java-5618149587187685053\package\lib\server\dispatchers\frameDispatcher.js:103:85)
-    at async DispatcherConnection.dispatch (C:\Users\user\AppData\Local\Temp\playwright-java-5618149587187685053\package\lib\server\dispatchers\dispatcher.js:313:22)
-}
-	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:111)
-	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:126)
-	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:102)
-	at com.microsoft.playwright.impl.FrameImpl.waitForSelectorImpl(FrameImpl.java:1064)
-	at com.microsoft.playwright.impl.LocatorImpl.lambda$waitForImpl$7(LocatorImpl.java:594)
-	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
-	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:87)
-	at com.microsoft.playwright.impl.LocatorImpl.waitForImpl(LocatorImpl.java:594)
-	at com.microsoft.playwright.impl.LocatorImpl.waitFor(LocatorImpl.java:590)
-	at com.microsoft.playwright.Locator.waitFor(Locator.java:5062)
-	at org.example.pages.SearchPage.getSubscribeButton(SearchPage.java:34)
-	at org.example.tests.SearchVideoTest.searchVideo(SearchVideoTest.java:24)
-Caused by: com.microsoft.playwright.impl.DriverException: Error {
-  message=&apos;Error: strict mode violation: locator(&quot;xpath=//yt-button-shape[@id=&apos;subscribe-button-shape&apos;]&quot;) resolved to 2 elements:
-    1) &lt;yt-button-shape version=&quot;modern&quot; id=&quot;subscribe-button-shape&quot; cla…&gt;…&lt;/yt-button-shape&gt; aka locator(&quot;#owner #subscribe-button-shape&quot;)
-    2) &lt;yt-button-shape version=&quot;modern&quot; id=&quot;subscribe-button-shape&quot; cla…&gt;…&lt;/yt-button-shape&gt; aka locator(&quot;#meta-contents #subscribe-button-shape&quot;)
-=========================== logs ===========================
-waiting for locator(&quot;xpath=//yt-button-shape[@id=&apos;subscribe-button-shape&apos;]&quot;) to be visible
-============================================================
-  name=&apos;Error
-  stack=&apos;Error: Error: strict mode violation: locator(&quot;xpath=//yt-button-shape[@id=&apos;subscribe-button-shape&apos;]&quot;) resolved to 2 elements:
-    1) &lt;yt-button-shape version=&quot;modern&quot; id=&quot;subscribe-button-shape&quot; cla…&gt;…&lt;/yt-button-shape&gt; aka locator(&quot;#owner #subscribe-button-shape&quot;)
-    2) &lt;yt-button-shape version=&quot;modern&quot; id=&quot;subscribe-button-shape&quot; cla…&gt;…&lt;/yt-button-shape&gt; aka locator(&quot;#meta-contents #subscribe-button-shape&quot;)
-=========================== logs ===========================
-waiting for locator(&quot;xpath=//yt-button-shape[@id=&apos;subscribe-button-shape&apos;]&quot;) to be visible
-============================================================
-    at CRExecutionContext.evaluateWithArguments (C:\Users\user\AppData\Local\Temp\playwright-java-5618149587187685053\package\lib\server\chromium\crExecutionContext.js:92:33)
-    at async LongStandingScope._race (C:\Users\user\AppData\Local\Temp\playwright-java-5618149587187685053\package\lib\utils\manualPromise.js:98:14)
-    at async evaluateExpression (C:\Users\user\AppData\Local\Temp\playwright-java-5618149587187685053\package\lib\server\javascript.js:241:12)
-    at async C:\Users\user\AppData\Local\Temp\playwright-java-5618149587187685053\package\lib\server\frames.js:627:24
-    at async Frame.retryWithProgressAndTimeouts (C:\Users\user\AppData\Local\Temp\playwright-java-5618149587187685053\package\lib\server\frames.js:911:24)
-    at async ProgressController.run (C:\Users\user\AppData\Local\Temp\playwright-java-5618149587187685053\package\lib\server\progress.js:92:22)
-    at async FrameDispatcher.waitForSelector (C:\Users\user\AppData\Local\Temp\playwright-java-5618149587187685053\package\lib\server\dispatchers\frameDispatcher.js:103:85)
-    at async DispatcherConnection.dispatch (C:\Users\user\AppData\Local\Temp\playwright-java-5618149587187685053\package\lib\server\dispatchers\dispatcher.js:313:22)
-}
-	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:226)
-	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:206)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:109)
-	... 45 more
-</failure>
-    <system-out>-- Success --
-</system-out>
-  </testcase>
-  <testcase classname="org.example.tests.ShortsTest" name="shortsTest" time="2.353"/>
-  <testcase classname="org.example.tests.VerifyUnaccessTest" name="verifyUnaccess" time="5.548"/>
+  <testcase classname="org.example.tests.HomepageTest" name="verifyHeadingIsVisible" time="0.3"/>
+  <testcase classname="org.example.tests.SearchVideoTest" name="searchVideo" time="3.94"/>
+  <testcase classname="org.example.tests.ShortsTest" name="shortsTest" time="2.187"/>
+  <testcase classname="org.example.tests.VerifyUnaccessTest" name="verifyUnaccess" time="1.378"/>
+  <testcase classname="org.example.tests.wGotoLoginPageTest" name="openSettingsAndFaceLoginPage" time="2.297"/>
 </testsuite>

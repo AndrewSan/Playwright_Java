@@ -17,3 +17,7 @@
 3) Реалізовано 5 тестів
  - опис задуму присутній як коментар в кожному класі
  - використані такі базові засоби як click, type, wait for element, sleep, assert
+ - команди для запуску
+ - усіх тестів - mvn test
+ - конкретного тесту - mvn test -Dtest=ShortsTest
+ - із записом відео роботи тесту - mvn test -Dtest=ShortsTest -DrecordVideo=true
